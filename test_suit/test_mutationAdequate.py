@@ -118,12 +118,14 @@ class MutationAdequateTest(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test24(self):
-        result = Triangle.classify(1, 3, 2)
-        assert result == Triangle.Type.INVALID
+        actual = Triangle.classify(1, 3, 2)
+        expected = Triangle.Type.INVALID
+        self.assertEqual(actual, expected)
     
     def test25(self):
-        result = Triangle.classify(1, 2, 1)
-        assert result == Triangle.Type.INVALID
+        actual = Triangle.classify(1, 2, 1)
+        expected = Triangle.Type.INVALID
+        self.assertEqual(actual, expected)
 
     def test26(self):
         actual = Triangle.classify(3, 1, 2)

@@ -38,7 +38,7 @@
     <li>module - <code><module 'isTriangle' from './isTriangle.py'></code></li>
     <li><span class="label label-success">killed</span> by <code>test25 (test_mutationAdequate.MutationAdequateTest)</code></li>
     
-    <li>duration - 0.006 s</li>
+    <li>duration - 0.007 s</li>
     
     
     <li>tests run - 18</li>
@@ -47,9 +47,9 @@
 
 <h3>Exception traceback</h3>
 <pre>Traceback (most recent call last):
-  File "./test_mutationAdequate.py", line 126, in test25
-    assert result == Triangle.Type.INVALID
-AssertionError
+  File "./test_mutationAdequate.py", line 128, in test25
+    self.assertEqual(actual, expected)
+AssertionError: <Type.ISOSCELES: 3> != <Type.INVALID: 0>
 </pre>
 
 <h3>Mutations</h3>
