@@ -19,11 +19,10 @@ coverage html -d initial_decision_html
 # Check the operating system
 if [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
     # Linux
-    PYTHON_EXECUTABLE="PYTHON_EXECUTABLE="/Users/vagisudar/Documents/SE \ 520/Inclass \ 2/IE2-Triangle/.venv/bin/python"
-"
+    PYTHON_EXECUTABLE="python3"
 elif [ "$(expr substr $(uname -s) 1 10)" = "MINGW32_NT" ]; then
     # Windows
-    PYTHON_EXECUTABLE="PYTHON_EXECUTABLE="/Users/vagisudar/Documents/SE \ 520/Inclass \ 2/IE2-Triangle/.venv/bin/python3"
+    PYTHON_EXECUTABLE="python3.exe"
 fi
 
 # Define the output file for both stdout and stderr
