@@ -6,7 +6,7 @@ from isTriangle import Triangle
 # from src.Triangle import Triangle
 
 
-class StatementCoverageTest(unittest.TestCase):
+class DecisionCoverage(unittest.TestCase):
     def test1(self):
         actual = Triangle.classify(10, 10, 10)
         expected = Triangle.Type.EQUILATERAL
